@@ -1,0 +1,138 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    /* O comando abaixo, evita que o padding afete largura e altura */
+    box-sizing: border-box; 
+  }
+
+  #logo{
+    
+    position: absolute;
+    top: 1%;
+    left: 0%;
+    height: 30pt;
+  }
+  
+  img {
+    height: 60px;
+
+  }
+  
+  nav {
+    background-color: #030303;
+    color: rgb(255, 255, 255);
+    padding: 20px;
+    font-size: 10pt;
+    
+  }
+  
+  aside {
+    background-color: rgb(255, 255, 255);
+  }
+  
+  main {
+    background-color: rgb(255, 255, 255);
+    padding: 32px;
+  }
+  
+  aside, main { 
+    padding: 32px; 
+    height: 585px;
+  }
+  
+  footer {
+    background-color: #ffffff;
+    color: #FFFFFF;
+    padding: 50px;
+  }
+  .button {
+    background-color: rgba(168, 168, 168, 0.575); 
+    border: none;
+    color: rgb(0, 0, 0);
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    transition-duration: 0.4s;
+  }
+  .button:hover {
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+  }
+  
+  
+  
+  
+  /************
+  * NAVEGAÇÃO *
+  *************/
+  .navbar {
+    list-style: none;
+    display: flex;
+    flex-flow: column wrap;
+  }
+  
+  .navbar li {
+    padding: 12px;
+    text-align: center;
+  }
+  
+  .navbar a {
+    font-family: sans-serif;
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+  }
+  
+  .navbar a:hover {
+    color: rgb(17, 0, 252);
+    text-decoration: underline;
+  }
+  .mainnavbar {
+    list-style: none;
+    flex-flow: column wrap;
+}
+.mainnavbar li {
+    padding: 12px;
+    text-align: start;
+  }
+  
+  .mainnavbar a {
+    font-family: sans-serif;
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+  }
+  
+  .mainnavbar a:hover {
+    color: rgb(17, 0, 252);
+    text-decoration: underline;
+  }
+  
+  
+  @media (min-width: 1025px) {
+  
+    .navbar {
+      flex-flow: row wrap;
+      justify-content: flex-end;
+    }
+    .logo{
+      flex: 10%;
+    }
+    #container {
+      display: flex;
+    }
+    
+    main {
+      flex: 75%;
+    }
+    
+    aside {
+      flex: 25%;
+    } 
+    footer{
+      flex: auto;
+    } 
+  }
+  
